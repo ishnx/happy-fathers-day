@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="A weekend in Bangalore with my father. Sixteen stops. Three days. June 2026." />
+  <title>A Weekend in Bangalore</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+
+  <!-- ─── Fixed UI Layer ──────────────────────────────────────── -->
+  <div id="v2-ui">
+    <div id="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+  </div>
+
+  <div id="chapter-label">
+    <span id="chapter-text"></span>
+  </div>
+
+  <button id="sound-btn" aria-label="Play ambient sound" title="Play ambient sound">♪</button>
+
+  <!-- ─── Bangalore Map Overlay ───────────────────────────────── -->
+  <div id="map-overlay" aria-hidden="true" role="presentation">
+    <div id="map-header">
+      <div id="map-label">Bengaluru</div>
+      <div id="map-toggle" title="Minimize">▾</div>
+    </div>
+    <div id="map-place-name"></div>
+    <svg id="bangalore-map" viewBox="0 0 280 380" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+
+  <!-- ─── Main Content (JS-rendered) ─────────────────────────── -->
+  <main id="v2-root"></main>
+
+  <!-- ─── Data + Engine ──────────────────────────────────────── -->
+  <script src="memories/memories.js"></script>
+  <script src="script2.js"></script>
+</body>
+</html>
